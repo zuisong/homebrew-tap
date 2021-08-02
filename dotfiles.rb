@@ -11,6 +11,11 @@ class Dotfiles < Formula
     system "go", "build", *std_go_args, "."
   end
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   test do
     system "dotfiles", "version"
   end
