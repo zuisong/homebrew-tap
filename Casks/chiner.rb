@@ -1,6 +1,6 @@
 cask "chiner" do
-  version "3.1.0"
-  sha256 "796890cc864338b58494c99130f1980dedd30b05e14b5a1c7591308315ab5eb8"
+  version "3.2.0"
+  sha256 "409ae32e7519d08acb17ec97c23ff7deb08e2632ed8a7b72a4a6a54b4f7f6d2f"
 
   url "http://chiner-release.httpchk.com/CHINER-mac_v#{version}.dmg",
       verified: "chiner-release.httpchk.com/"
