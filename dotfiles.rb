@@ -5,15 +5,15 @@ class Dotfiles < Formula
   sha256 "090b918636b405be8dab6d19e541afda2bf0e252409bff284679b297d3e563e4"
   license "MIT"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   depends_on "go" => :build
 
   def install
     system "go", "build", *std_go_args, "."
-  end
-
-  livecheck do
-    url :url
-    strategy :github_latest
   end
 
   test do
