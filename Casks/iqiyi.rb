@@ -1,5 +1,5 @@
 cask "iqiyi" do
-  version "12.8.0"
+  version "12.9.0"
   sha256 :no_check
 
   url "https://static-d.iqiyi.com/ext/common/iQIYIMedia_271.dmg"
@@ -7,15 +7,15 @@ cask "iqiyi" do
   desc "Interactive media player"
   homepage "https://www.iqiyi.com/"
 
-  depends_on macos: ">= :catalina"
-
-  app "爱奇艺.app"
-
   livecheck do
     url "https://app.iqiyi.com/mac/player/index.html"
     strategy :page_match
-    regex(%r{.*最新版本：([\d\.]+)}i)
+    regex(/.*最新版本：([\d.]+)/i)
   end
+
+  depends_on macos: ">= :catalina"
+
+  app "爱奇艺.app"
 
   zap trash: [
     "~/Library/Containers/com.iqiyi.player.QYWidget",
