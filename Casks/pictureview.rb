@@ -16,7 +16,7 @@ cask "pictureview" do
   app "PictureView.app"
 
   zap trash: [
-    "Library/Caches/com.zouke.PictureView",
-    "Library/Preferences/com.zouke.PictureView.plist",
+    "~/Library/Caches/com.zouke.PictureView",
+    "~/Library/Preferences/com.zouke.PictureView.plist",
   ]
 end
