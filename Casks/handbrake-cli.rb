@@ -1,6 +1,6 @@
 cask "handbrake-cli" do
-  version "1.4.1"
-  sha256 "4af30f966856469a360b9b3ae413ce01927cc57687f9892dbbc173ca13ca3b72"
+  version "1.4.2"
+  sha256 "0e1a014861cd12dd7b15f255700a0bb3809dd397881d3859129ce075be0aa6f0"
 
   url "https://github.com/HandBrake/HandBrake/releases/download/#{version}/HandBrakeCLI-#{version}.dmg",
       verified: "github.com/HandBrake/HandBrake/"
