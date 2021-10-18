@@ -8,12 +8,16 @@ cask "intellij-idea-ce-cli" do
   homepage "https://github.com/zuisong"
 
   shimscript = "#{staged_path}/idea-ce.wapper.sh"
+  livecheck do
+    skip "no version"
+  end
+
   depends_on cask: "intellij-idea-ce"
 
   binary shimscript, target: "idea-ce"
 
   preflight do
-    IO.write shimscript, <<~EOS
+    File.write shimscript, <<~EOS
       #!/bin/sh
       open -na "#{appdir}/IntelliJ IDEA CE.app" --args "$@"
     EOS
