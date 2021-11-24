@@ -1,9 +1,9 @@
 cask "wpsoffice-cn" do
-  version "3.9.4,6369"
-  sha256 "5457136a0ee8ff0a4c1fbf506033f9b66d5c1bfd97bb93b09dc5139f89a8a424"
+  version "3.9.4,6378"
+  sha256 "ab5a4f89c9486f7f3ceaf701f0d97c9d61cd7f95e8469b93056a3542952b16c6"
 
-  url "http://package.mac.wpscdn.cn/mac_wps_pkg/#{version.before_comma}/WPS_Office_#{version.before_comma}(#{version.after_comma}).dmg",
-      verified: "package.mac.wpscdn.cn"
+  url "https://wpscdn-macos-pkg.ks3-cn-beijing.ksyun.com/mac_wps_pkg/#{version.before_comma}/WPS_Office_#{version.before_comma}(#{version.after_comma}).dmg",
+      verified: "wpscdn-macos-pkg.ks3-cn-beijing.ksyun.com"
   name "WPS Office"
   desc "All-in-one office suite"
   homepage "https://www.wps.cn/product/wpsmac/"
