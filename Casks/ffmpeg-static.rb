@@ -1,11 +1,11 @@
 cask "ffmpeg-static" do
-  version "4.4"
-  sha256 "daa908133ab580a25a0e7507aabd27fec1331ce50637b0d2ce3cc80224c7c2b4"
+  version "4.4.1"
+  sha256 "a9f5e7b8c10cbed188a945ae893d753296a5561683af3a354ff41b42c8841e54"
 
   url "https://github.com/eugeneware/ffmpeg-static/releases/download/b#{version}/darwin-arm64.gz"
   name "ffmpeg-static"
   desc "Static build of ffmpeg"
   homepage "https://github.com/eugeneware/ffmpeg-static"
 
-  binary "darwin-arm64", target: 'ffmpeg'
+  binary "darwin-arm64", target: "ffmpeg"
 end
