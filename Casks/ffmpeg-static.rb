@@ -1,6 +1,6 @@
 cask "ffmpeg-static" do
-  version "5.0"
-  sha256 "ecac76e3fca84a5a04fbb3a9cba51e7f399ac290b8b6d6e8410145fda019ccb2"
+  version "5.0.1"
+  sha256 "6ff886d73aace493ea0b37625d9503ef7493a4a3d0331305ee89c91528b4e3bc"
 
   url "https://github.com/eugeneware/ffmpeg-static/releases/download/b#{version}/darwin-arm64.gz"
   name "ffmpeg-static"
