@@ -1,14 +1,16 @@
 cask "paper" do
-  version "3.6"
-  sha256 "f9f054de52e355b526d985c0f67c22ac8947cba154359a41a327fca03aa30658"
-  url "https://paperapp.net/app/pap.er-v#{version}.zip"
+  version "5.0.11b"
+  sha256 "cf3386a0d73a6ef92575b0f45da4bbece792cbdf1252e1bb06c149dd58160b84"
+
+  url "https://s3.nsns.in/dl/paper-v#{version}.dmg",
+      verified: "s3.nsns.in"
   name "Paper"
   desc "Live wallpaper app"
   homepage "https://paper.meiyuan.in/"
 
   livecheck do
     url :homepage
-    regex(/["'][^"']*pap\.er[._-]v?(\d+(?:\.\d+)+)\.zip["']/i)
+    regex(/paper-v?(.+)\.dmg/i)
   end
 
   depends_on macos: ">= :el_capitan"
