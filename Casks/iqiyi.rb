@@ -18,8 +18,12 @@ cask "iqiyi" do
   app "爱奇艺.app"
 
   zap trash: [
-    "~/Library/Containers/com.iqiyi.player.QYWidget",
     "~/Library/Application Scripts/com.iqiyi.player.QYWidget",
+    "~/Library/Application Scripts/com.iqiyi.player",
+    "~/Library/Application Scripts/com.iqiyi.player.QYWidget",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.iqiyi.player.sfl*",
+    "~/Library/Containers/com.iqiyi.player",
+    "~/Library/Containers/com.iqiyi.player.QYWidget",
     "~/Library/Group Containers/group.com.qiyi",
   ]
 end
