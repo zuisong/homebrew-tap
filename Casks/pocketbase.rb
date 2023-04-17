@@ -1,9 +1,9 @@
 cask "pocketbase" do
   arch arm: "arm64", intel: "amd64"
 
-  version "0.14.2"
-  sha256 arm:   "ae32f0569f6afc33ca8ef193cc50161a2168460d0f35e52f4d5b1feac4a6f0a0",
-         intel: "b36c1d1721884e13aed6de002f31b093b7dffa17daba844030ff44aa75bf6e2b"
+  version "0.14.5"
+  sha256 arm:   "959030f2298df85643406e018f757afc1b43d9dfe5f04ad3c2a34231a6a8d271",
+         intel: "0c5cf2df43b65953c270e7479074a3f61cb6c20fc331cd47eb6fc03a5394c108"
 
   url "https://github.com/pocketbase/pocketbase/releases/download/v#{version}/pocketbase_#{version}_darwin_#{arch}.zip"
   name "PocketBase"
