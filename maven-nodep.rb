@@ -1,9 +1,9 @@
 class MavenNodep < Formula
   desc "Java-based project management"
   homepage "https://maven.apache.org/"
-  url "https://www.apache.org/dyn/closer.lua?path=maven/maven-3/3.9.1/binaries/apache-maven-3.9.1-bin.tar.gz"
-  mirror "https://archive.apache.org/dist/maven/maven-3/3.9.1/binaries/apache-maven-3.9.1-bin.tar.gz"
-  sha256 "0869a4f71238e3eeec21051d062cfd915d34abe905c9bfebf94cd34578db0be7"
+  url "https://www.apache.org/dyn/closer.lua?path=maven/maven-3/3.9.2/binaries/apache-maven-3.9.2-bin.tar.gz"
+  mirror "https://archive.apache.org/dist/maven/maven-3/3.9.2/binaries/apache-maven-3.9.2-bin.tar.gz"
+  sha256 "809ef3220c6d179195c06c324cb9a6d34d8ecba566c5cfd8eb83167bc034117d"
   license "Apache-2.0"
 
   livecheck do
