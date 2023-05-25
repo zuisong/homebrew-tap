@@ -22,7 +22,7 @@ cask "openlens-625" do
   caveats <<~EOS
     After installing version 6.2.5 you can block updates by changing the permissions of the pending folder:
 
-    sudo chmod -R 000 "~/Library/Application Support/Caches/open-lens-updater/pending"
+    sudo chmod -R 000 "$HOME/Library/Application Support/Caches/open-lens-updater/pending"
 
   EOS
 end
