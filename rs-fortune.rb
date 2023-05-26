@@ -1,8 +1,8 @@
 class RsFortune < Formula
   desc "Rust version of fortune"
   homepage "https://github.com/zuisong/rs-fortune"
-  url "https://github.com/zuisong/rs-fortune/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "aef13c202d9d6a6ba6960e40758bf4c28f74b491075a63696198a29955449168"
+  url "https://github.com/zuisong/rs-fortune/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "fea3cf2180a94ab9d6aef7a08ade53aa510ad03dfa74d732f7bafacd27daf9da"
   license "MIT"
 
   depends_on "rust" => :build
