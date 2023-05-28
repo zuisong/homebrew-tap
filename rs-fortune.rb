@@ -1,17 +1,15 @@
 class RsFortune < Formula
   desc "Rust version of fortune"
   homepage "https://github.com/zuisong/rs-fortune"
-  url "https://github.com/zuisong/rs-fortune/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "d500a8d9f061cf9c4afec179d11f73eec2092609fa13b78a9420c9773c2919e1"
+  url "https://github.com/zuisong/rs-fortune/releases/download/v0.4.0/rs-fortune-universal-apple-darwin.tar.gz"
+  sha256 "6ecf3654385b096c2d527787a4d28dcff2b8917f2cc53fe3cd031f356f17212d"
   license "MIT"
 
-  depends_on "rust" => :build
-
   def install
-    system "cargo", "install", *std_cargo_args
+    bin.install "rs-fortune"
   end
 
   test do
-    system "false"
+    assert_match version.to_s, shell_output("#{bin}/rs-fortune -h")
   end
 end
