@@ -1,11 +1,11 @@
 cask "double-commander-dev" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "1.1.0-10759"
-  sha256 arm:   "b2d6ac11b4de381090ba675a0620a3ba5a694587dafac9b957f1539dd68c8e09",
-         intel: "fd9288f1f340a1438b2caf6fecb55d69910b1491ddfacbc7932a3badab1e25f9"
+  version "1.1.0-10761"
+  sha256 arm:   "c7d06a35a0099863625689a689ced8c1fdae0bd686e4666ca5b1dca9973fb6d1",
+         intel: "adcf60b3fedd5e17ef1b88dbf5cb3f352b72b529081c581a16e087eaccaa4913"
 
-  # TODO: ignore "SourceForge URL format incorrect".
+  # audit ignore "SourceForge URL format incorrect".
   url "https://doublecmd.sourceforge.io/snapshots/doublecmd-#{version}.cocoa.#{arch}.dmg"
   name "double-commander-dev"
   desc "File manager with two panels"
