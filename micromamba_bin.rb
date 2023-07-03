@@ -1,9 +1,9 @@
 class MicromambaBin < Formula
   desc "Fast Cross-Platform Package Manager"
   homepage "https://github.com/mamba-org/mamba"
-  url "https://api.anaconda.org/download/conda-forge/micromamba/1.4.5/osx-arm64/micromamba-1.4.5-0.tar.bz2"
-  version "1.4.5"
-  sha256 "250d00499ac00207da4cb7a9969e6ceac0ddd3debffb9a3f0fa3dedf560d8e76"
+  url "https://api.anaconda.org/download/conda-forge/micromamba/1.4.6/osx-arm64/micromamba-1.4.6-0.tar.bz2"
+  version "1.4.6"
+  sha256 "4ee980a8c727d97f9a9cc6f4e8712ce7f3a9cf3990ac29cbfb36bef4692b6958"
   license "BSD-3-Clause"
 
   livecheck do
