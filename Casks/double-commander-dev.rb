@@ -1,9 +1,9 @@
 cask "double-commander-dev" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "1.2.0-10850"
-  sha256 arm:   "0b6221f5daa2f30cbaec3103d123ed632953344e3e94513201815be5ec1ba8eb",
-         intel: "2013a60c526e354d19966ea4855e57c3e941497439a36845ed46e2736b7811d5"
+  version "1.2.0-10852"
+  sha256 arm:   "04102ee8f5fcff146c7e91fdc9ab4d4b8d1e6635bb5bc34a18b8f03a65e3bd8e",
+         intel: "30eb311d1fb221652b8989115bbb2e56e703a0f8e436f9845d08776c47b128a1"
 
   # audit ignore "SourceForge URL format incorrect".
   url "https://doublecmd.sourceforge.io/snapshots/doublecmd-#{version}.cocoa.#{arch}.dmg"
