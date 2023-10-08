@@ -1,9 +1,9 @@
 cask "clash-verge" do
   arch arm: "aarch64", intel: "x64"
 
-  version "1.3.3"
-  sha256 arm:   "188b5668052ce170f297e9fc83240f78ee4f745d8cdbccc767f01844c72a5509",
-         intel: "5930a7aa4ac2bf3341f494c81d703b242d38d6b2802177b74f2ecfb585640c87"
+  version "1.3.7"
+  sha256 arm:   "dbf2b5cbb75e833a6e1b6e57c448afc8b03ec60937fcf79766b4697ed7fdf1c2",
+         intel: "f9c63c38fbbcabb385f0a073813577a9c3eba7134926b381c2f129ec40e578ff"
 
   url "https://github.com/zzzgydi/clash-verge/releases/download/v#{version}/Clash.Verge_#{version}_#{arch}.dmg"
   name "Clash for Windows"
