@@ -1,4 +1,4 @@
-class MavenAT4 < Formula
+class Maven4 < Formula
   desc "Java-based project management"
   homepage "https://maven.apache.org/"
   url "https://www.apache.org/dyn/closer.lua?path=maven/maven-4/4.0.0-alpha-8/binaries/apache-maven-4.0.0-alpha-8-bin.tar.gz"
