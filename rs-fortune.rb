@@ -1,8 +1,8 @@
 class RsFortune < Formula
   desc "Rust version of fortune"
   homepage "https://github.com/zuisong/rs-fortune"
-  url "https://github.com/zuisong/rs-fortune/releases/download/v0.7.0/rs-fortune-universal-apple-darwin.tar.gz"
-  sha256 "e9cffe647bbbe897c29aeef1412a7bd3eecff2208d7e771191cce4b026fc9b5f"
+  url "https://github.com/zuisong/rs-fortune/releases/download/v0.8.0/rs-fortune-universal-apple-darwin.tar.gz"
+  sha256 "f3ca4ce7a45018b3a7ff056182644091da63de3b9587e1b190b3d5f82366a0d5"
   license "MIT"
 
   def install
