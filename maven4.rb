@@ -1,9 +1,9 @@
 class Maven4 < Formula
   desc "Java-based project management"
   homepage "https://maven.apache.org/"
-  url "https://www.apache.org/dyn/closer.lua?path=maven/maven-4/4.0.0-alpha-8/binaries/apache-maven-4.0.0-alpha-8-bin.tar.gz"
-  version "4.0.0-alpha-8"
-  sha256 "0866cc244516f06d3eaf46560783fd8750ca0243e6313da4a2bf6c1150b490c8"
+  url "https://www.apache.org/dyn/closer.lua?path=maven/maven-4/4.0.0-alpha-9/binaries/apache-maven-4.0.0-alpha-9-bin.tar.gz"
+  version "4.0.0-alpha-9"
+  sha256 "81e3e5392d70f96bb2d5569edd3fab6e8dba4b91143bc1f68c055837ca3ec436"
   license "Apache-2.0"
 
   livecheck do
