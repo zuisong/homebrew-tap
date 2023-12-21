@@ -7,8 +7,8 @@ class Maven4 < Formula
   license "Apache-2.0"
 
   livecheck do
-    url "https://maven.apache.org/ref/4-LATEST/"
-    regex(/Version: (4[^<]+)/i)
+    url "https://dlcdn.apache.org/maven/maven-4/"
+    regex(/(4\.[^\/]+)/i)
   end
 
   def install
