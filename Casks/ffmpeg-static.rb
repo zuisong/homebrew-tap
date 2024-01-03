@@ -1,9 +1,9 @@
 cask "ffmpeg-static" do
   arch arm: "arm", intel: "intel"
 
-  version "61"
-  sha256 arm:   "124df65aa37ff5d913d8402534f2d72975ea55036fa32fec258e76d631ee4d87",
-         intel: "9a7de6ea24052166340c50e00dd493da49315431e6bfde5ed2a600eab9f27b65"
+  version "611"
+  sha256 arm:   "da124a70feedaf1d1972cc21e1038194974393167472c0efdda4de3f87610d7e",
+         intel: "94dcde746364b516d4c9d79cbae2807e5c0bea6a1a8be45742c2cd6850303426"
 
   url "https://www.osxexperts.net/ffmpeg#{version}#{arch}.zip"
   name "ffmpeg-static"
