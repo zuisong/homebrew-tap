@@ -1,9 +1,9 @@
-class MavenNodep < Formula
+class Maven3 < Formula
   desc "Java-based project management"
   homepage "https://maven.apache.org/"
-  url "https://www.apache.org/dyn/closer.lua?path=maven/maven-3/3.9.5/binaries/apache-maven-3.9.5-bin.tar.gz"
-  mirror "https://archive.apache.org/dist/maven/maven-3/3.9.5/binaries/apache-maven-3.9.5-bin.tar.gz"
-  sha256 "5fd272b105041fe81e2e42f6399765e015fc4938ef3753ba4af9f0119d84ef7c"
+  url "https://www.apache.org/dyn/closer.lua?path=maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz"
+  mirror "https://archive.apache.org/dist/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz"
+  sha256 "6eedd2cae3626d6ad3a5c9ee324bd265853d64297f07f033430755bd0e0c3a4b"
   license "Apache-2.0"
 
   livecheck do
