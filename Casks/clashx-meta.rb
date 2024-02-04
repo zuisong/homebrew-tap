@@ -1,6 +1,6 @@
 cask "clashx-meta" do
-  version "1.3.9"
-  sha256 "0722205ecc2bf6d266f13a11beb172340e99732c06b36c51efbcc098c2d92533"
+  version "1.3.10"
+  sha256 "434b7865ed0995442069d09716c34df6a380865f8de61d90a72e7b0af25958d6"
 
   url "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v#{version}/ClashX.Meta.macOS.12.0+.zip"
   name "ClashX Meta"
@@ -20,12 +20,12 @@ cask "clashx-meta" do
 
   app "ClashX Meta.app"
 
-  uninstall delete:    [
+  uninstall launchctl: "com.metacubex.ClashX.ProxyConfigHelper",
+            quit:      "com.metacubex.ClashX",
+            delete:    [
               "/Library/LaunchDaemons/com.metacubex.ClashX.ProxyConfigHelper.plist",
               "/Library/PrivilegedHelperTools/com.metacubex.ClashX.ProxyConfigHelper",
-            ],
-            launchctl: "com.metacubex.ClashX.ProxyConfigHelper",
-            quit:      "com.metacubex.ClashX"
+            ]
 
   zap trash: [
     "~/Library/Application Support/com.metacubex.ClashX.meta",
