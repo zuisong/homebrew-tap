@@ -1,9 +1,9 @@
 cask "rubick" do
   arch arm: "arm64", intel: "x64"
 
-  version "4.2.1"
-  sha256 arm:   "011dfe1be132a239f2cb81f6dab4fde144e11a4cb0a424b2c8c08842f56e85db",
-         intel: "0bf8b93868c542a76e21cbf444aaabc3b9421820c69cb78036c8e2296872fb85"
+  version "4.2.2"
+  sha256 arm:   "325a4ed78689bc265c6b15fb012447e9a17cc31e9ad43a73d928310da0907eaf",
+         intel: "f865184654db1270ecd0c14de6ca62b6da00435d75fdca6f5161211af195685e"
 
   url "https://github.com/rubickCenter/rubick/releases/download/v#{version}/rubick-#{version}-#{arch}.dmg"
   name "rubick"
