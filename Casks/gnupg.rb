@@ -1,6 +1,6 @@
 cask "gnupg" do
-  version "2.4.4"
-  sha256 "ef4fd0922354bee99698fef0ee32caadc04531ab54d563c1cf7de2fa671ebf65"
+  version "2.4.5"
+  sha256 "e924d250adc9b78a4cb72dee34e9c4d40b4c3c281aee80fcc43366de1a9cc61a"
 
   url "https://downloads.sourceforge.net/gpgosx/GnuPG-#{version}.dmg"
   name "GnuPG"
