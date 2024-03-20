@@ -1,9 +1,9 @@
 cask "xterminal" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.20.9"
-  sha256 arm:   "dcab688b6fb674a9efc8217582478d5cd7e982882ad3a08e5a5550617a2d12d6",
-         intel: "545a20004fe0cdcb6a22093abd7884f9e1ef2bfd3f1af30a53822e5a7a365f10"
+  version "1.20.23"
+  sha256 arm:   "bcf484c79b177ec797e46902bd05fa9dc62148ca39ae0b12cac989600b300710",
+         intel: "01db792a44163011886da4df8dfc0d3d2fdcffd6571aa1c5be5f82dbb901932e"
 
   url "https://cdn-cn.xterminal.cn/xterminal/XTerminal-#{version}-mac-#{arch}.dmg"
   name "xterminal"
