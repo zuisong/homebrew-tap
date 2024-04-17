@@ -1,8 +1,8 @@
 class GitMulti < Formula
   desc "Rewrite of git-multi in Go"
   homepage "https://github.com/chrsmutti/git-multi"
-  url "https://github.com/chrsmutti/git-multi/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "0c059644422db246dee68ee1c66f971144dc8014c5a528b57f2e5a8bc0792b54"
+  url "https://github.com/chrsmutti/git-multi/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "bb5e713c75d61f352cae19cbf7571d5663b10b780508b879e8b03533b1045d45"
   license ""
 
   depends_on "go" => :build
