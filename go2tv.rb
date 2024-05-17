@@ -1,8 +1,8 @@
 class Go2tv < Formula
   desc "Cast your media files to UPnP/DLNA Media Renderers and Smart TVs"
   homepage "https://github.com/alexballas/go2tv"
-  url "https://github.com/alexballas/go2tv/archive/v1.15.0.tar.gz"
-  sha256 "e2b42462f6c5a2f446faf1fe54983018ae8eaeff86f7df8c8076c15486ded851"
+  url "https://github.com/alexballas/go2tv/archive/refs/tags/v1.16.1.tar.gz"
+  sha256 "1c8001ff6fa8f35c046a29130c22ccfef49ecf5557c50c206fab4ee5d66b6f94"
   license "MIT"
 
   livecheck do
@@ -14,7 +14,7 @@ class Go2tv < Formula
 
   def install
     ldflags="-s -w -X main.build=#{Time.now.utc.iso8601} -X main.version=#{version}"
-    system "go", "build", *std_go_args(ldflags: ldflags), "-o", "#{bin}/go2tv", "cmd/go2tv/go2tv.go"
+    system "go", "build", *std_go_args(ldflags:), "-o", "#{bin}/go2tv", "cmd/go2tv/go2tv.go"
   end
 
   test do
