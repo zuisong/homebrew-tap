@@ -1,17 +1,17 @@
 cask "xterminal" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.20.23"
-  sha256 arm:   "bcf484c79b177ec797e46902bd05fa9dc62148ca39ae0b12cac989600b300710",
-         intel: "01db792a44163011886da4df8dfc0d3d2fdcffd6571aa1c5be5f82dbb901932e"
+  version "1.24.7"
+  sha256 arm:   "8a3551320979c03266d54af06f04892c4aae3e5f155bdd370aafd4f60d461a40",
+         intel: "c5957fb04e1666e9404cd8489fa9dc8cf9fc32a0830f437cecbced8300fd3ca7"
 
-  url "https://cdn-cn.xterminal.cn/xterminal/XTerminal-#{version}-mac-#{arch}.dmg"
+  url "https://cdn-cn.xterminal.cn/downloads/XTerminal-#{version}-mac-#{arch}.dmg", user_agent: :fake
   name "xterminal"
   desc "Not only a powerful SSH tool, but also a local console terminal"
   homepage "https://www.xterminal.cn/"
 
   livecheck do
-    url "https://api.xterminal.cn/server/electron/version2"
+    url "https://api.xterminal.cn/server/electron/version3"
     strategy :json do |json|
       json["mac"]["version"]
     end
