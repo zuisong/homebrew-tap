@@ -13,9 +13,9 @@ cask "clash-nyanpasu" do
   app "Clash Nyanpasu.app"
 
   zap trash: [
-    "Library/Application Support/clash-nyanpasu",
-    "Library/Caches/moe.elaina.clash.nyanpasu/",
-    "Library/Saved Application State/moe.elaina.clash.nyanpasu.savedState/",
-    "Library/WebKit/moe.elaina.clash.nyanpasu/",
+    "~/Library/Application Support/clash-nyanpasu",
+    "~/Library/Caches/moe.elaina.clash.nyanpasu/",
+    "~/Library/Saved Application State/moe.elaina.clash.nyanpasu.savedState/",
+    "~/Library/WebKit/moe.elaina.clash.nyanpasu/",
   ]
 end
