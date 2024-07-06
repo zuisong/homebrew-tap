@@ -11,7 +11,7 @@ cask "i4tools" do
   livecheck do
     url "https://url.i4.cn/fqIBBbaa"
     strategy :header_match do |headers|
-      match = headers["location"].match(%r{/i4mac/([\d.]+)/(\d)/i4Tools_v([.\d]+)\.dmg}i)
+      match = headers["location"].match(%r{/i4mac/([\d.]+)/(\d)/i4Tools[\D]+([.\d]+)\.dmg}i)
       next if match.blank?
 
       "#{match[3]},#{match[1]},#{match[2]}"
