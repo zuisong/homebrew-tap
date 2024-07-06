@@ -1,9 +1,9 @@
 cask "tinyrdm" do
   arch arm: "arm64", intel: "intel"
 
-  version "1.1.13"
-  sha256 arm:   "3341eac8de33302676421b31f6bd85936bc2493a0e8d56450695dbc46afaa967",
-         intel: "09faca5da53fbc090cb154bb47788de7bcd361f3b7ff9bef20a90f03316a17f9"
+  version "1.1.14"
+  sha256 arm:   "43796a2f18af672c667f5af573d13ee21fa5d889a2c559373b5256096bd8f86f",
+         intel: "3a8a0e438655ebb65277bcbf478300fb19eda2652d1ee037bb5e31c9026cdaf5"
 
   url "https://github.com/tiny-craft/tiny-rdm/releases/download/v#{version}/TinyRDM_#{version}_mac_#{arch}.dmg"
   name "tinyrdm"
