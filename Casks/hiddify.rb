@@ -1,8 +1,8 @@
 cask "hiddify" do
-  version "1.4.0"
-  sha256 "fe7caf7fc0432d9f47a94f25fc04bca99cd4f0e234801dcbb1986df37c1fb85a"
+  version "2.1.5"
+  sha256 "5bdea79a198c79fe0ccf9834a6fd7c8ed02403556ae38f88d236eb800d987c9c"
 
-  url "https://github.com/hiddify/hiddify-next/releases/download/v#{version}/Hiddify-MacOS.dmg"
+  url "https://github.com/hiddify/hiddify-next/releases/download/v#{version}/Hiddify-MacOS.dmg", verified: "github.com/hiddify/"
   name "hiddify"
   desc "Multi-platform auto-proxy client"
   homepage "https://hiddify.com/"
