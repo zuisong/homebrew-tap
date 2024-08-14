@@ -1,6 +1,6 @@
 cask "i4tools" do
-  version "3.05.007,20240614,0"
-  sha256 "c2765ead1a2156f616944ff17f6ef71011af0739cf7a3a76c826b01744d38151"
+  version "3.07.008,20240812,0"
+  sha256 "3d678645029e328e967de79753d8b7db21cd8e57a3f852ccf3d5615f784fb9dc"
 
   url "https://d-updater.i4.cn/i4mac/#{version.csv.second}/#{version.csv.third}/i4Tools_v#{version.csv.first}.dmg"
   name "i4Tools"
