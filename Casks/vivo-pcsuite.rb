@@ -15,7 +15,7 @@ cask "vivo-pcsuite" do
 
   auto_updates true
 
-  pkg "pcsuite-setup-#{version}.pkg"
+  pkg "pcsuite-#{version}.pkg"
 
   uninstall pkgutil: "com.vivo.pcsuite"
 
