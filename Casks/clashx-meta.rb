@@ -1,22 +1,16 @@
 cask "clashx-meta" do
-  version "1.3.18"
-  sha256 "2137f3796e52f0796c1d8456c86aa6ad2b5fd7a38f77c9ad12f8a537d7083ac8"
+  version "1.4.2"
+  sha256 "760188a15df1ccfde907d5fd0ffbc8ff7ea47e12497950752b7f9c3465561bee"
 
-  url "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v#{version}/ClashX.Meta.macOS.12.0+.zip"
+  url "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v#{version}/ClashX.Meta.zip"
   name "ClashX Meta"
   desc "Rule-based custom proxy with GUI based on Clash.Meta"
   homepage "https://github.com/MetaCubeX/ClashX.Meta"
 
   livecheck do
-    url "https://github.com/MetaCubeX/ClashX.Meta/releases"
-    regex(%r{href=".*?/releases/tag/v?(\d+(?:\.\d+)+)"}i)
-    strategy :page_match do |page, regex|
-      page.scan(regex).flatten.uniq.sort
-    end
+    url :url
+    strategy :github_latest
   end
-
-  auto_updates true
-  depends_on macos: ">= :sierra"
 
   app "ClashX Meta.app"
 
