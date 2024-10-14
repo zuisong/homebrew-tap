@@ -1,6 +1,6 @@
 cask "vivo-pcsuite" do
-  version "3.6.9-arm64_1722829441318"
-  sha256 "d6507b20cc2bd0e33d3f07f36c9f37c0401ef8c6590a0d1b69a658a6f61ecae2"
+  version "5.2.0-arm64_1728461732507"
+  sha256 "8b97c610f8b943dc31b67aa877fb5974d539f31cac0ea1b83ce0cb2cfb6193f9"
 
   url "https://pcsuite-api-static.vivo.com/upgrade-pre/pcsuite-#{version}.pkg"
   name "vivo-pcsuite"
