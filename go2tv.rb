@@ -5,11 +5,6 @@ class Go2tv < Formula
   sha256 "2bdac54b3c98e39cb3ddc28db7f2c841be4cc3d7e6ec710263881db6920a5d32"
   license "MIT"
 
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
-
   depends_on "go" => :build
 
   def install
