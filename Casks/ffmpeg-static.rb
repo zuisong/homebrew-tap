@@ -1,5 +1,5 @@
 cask "ffmpeg-static" do
-  version 1.0
+  version "1.0"
   sha256 :no_check
 
   url "https://github.com/Homebrew/homebrew-cask/raw/refs/heads/master/Casks/l/losslesscut.rb"
