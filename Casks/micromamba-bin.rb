@@ -1,9 +1,9 @@
 cask "micromamba-bin" do
   arch arm: "arm64", intel: "64"
 
-  version "2.1.0-0"
-  sha256 arm:   "6ba982e0c11f12fd5fa151aa8be10de0b749f9fab7af6e62cdcd4eb0c9b61b0d",
-         intel: "9f482294ebf6927f46feaa560278f30565006ce76e61ec4a3af15aafb386f687"
+  version "2.1.1-0"
+  sha256 arm:   "008ad98af6420d162611fcd7894c373b97d1fda3e3576f69d89d72309d0b54d6",
+         intel: "810b045e10c7d30aab3202df3ebfe9fa9f98b0144f7d4bb17c41472d3208424e"
 
   url "https://github.com/mamba-org/micromamba-releases/releases/download/#{version}/micromamba-osx-#{arch}.tar.bz2"
   name "micromamba"
