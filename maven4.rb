@@ -3,7 +3,7 @@ class Maven4 < Formula
   homepage "https://maven.apache.org/"
   url "https://www.apache.org/dyn/closer.lua?path=maven/maven-4/4.0.0-rc-4/binaries/apache-maven-4.0.0-rc-4-bin.tar.gz"
   version "4.0.0-rc-4"
-  sha256 "726b1f7fcaa6d574d647c1f5c4d24829942bd0cd88b5924c9aac0794d8bed65b"
+  sha256 "454ab0fb07e6e9e365f7f56e6bcef18df1d619aa57e2bd6de527f0e0c85bdbbb"
   license "Apache-2.0"
 
   livecheck do
