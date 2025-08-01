@@ -2,7 +2,7 @@ cask "i4tools" do
   version "3.11.015,20241121,0"
   sha256 "ac663ceb8c37766e10087528b977b7da1e80be3b030d7aff74349eaea6524da2"
 
-  url "https://d-updater.i4.cn/i4mac/#{version.csv.second}/#{version.csv.third}/i4Tools_v#{version.csv.first}.dmg"
+  url "https://d-app6.i4.cn/i4tools/mac/#{version.csv.second}/#{version.csv.third}/i4Tools_v#{version.csv.first}.dmg"
   name "i4Tools"
   name "爱思助手"
   desc "Mobile device management software"
@@ -11,7 +11,7 @@ cask "i4tools" do
   livecheck do
     url "https://url.i4.cn/fqIBBbaa"
     strategy :header_match do |headers|
-      match = headers["location"].match(%r{/i4mac/([\d.]+)/(\d)/i4Tools[\D]+([.\d]+)\.dmg}i)
+      match = headers["location"].match(%r{/([\d.]+)/(\d)/i4Tools[\D]+([.\d]+)\.dmg}i)
       next if match.blank?
 
       "#{match[3]},#{match[1]},#{match[2]}"
