@@ -1,6 +1,6 @@
 cask "clashx-meta" do
-  version "1.4.22"
-  sha256 "24fb5b88fbc71e7a68d67fc65f8d1f464690cc6f5fe2b1fe6009366d0345ae6c"
+  version "1.4.25"
+  sha256 "23b1d0dc8acd6574324b530bd72663bd6186a4208fe14fd32781129290554414"
 
   url "https://github.com/MetaCubeX/ClashX.Meta/releases/download/v#{version}/ClashX.Meta.zip"
   name "ClashX Meta"
@@ -11,6 +11,8 @@ cask "clashx-meta" do
     url :url
     strategy :github_latest
   end
+
+  depends_on macos: ">= :monterey"
 
   app "ClashX Meta.app"
 
