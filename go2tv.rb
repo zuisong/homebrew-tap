@@ -1,8 +1,8 @@
 class Go2tv < Formula
   desc "Cast your media files to UPnP/DLNA Media Renderers and Smart TVs"
   homepage "https://github.com/alexballas/go2tv"
-  url "https://github.com/alexballas/go2tv/archive/refs/tags/v1.18.1.tar.gz"
-  sha256 "f69a9e3593bdbbed928015268483556663e74fc85ec83aa8b5e5155e96a06d40"
+  url "https://github.com/alexballas/go2tv/archive/refs/tags/v1.19.0.tar.gz"
+  sha256 "c1f70bb60bb3974d3fcee57dec7fc8378da1ec5d6f6a1aa6ae59211149eb75f1"
   license "MIT"
 
   depends_on "go" => :build
