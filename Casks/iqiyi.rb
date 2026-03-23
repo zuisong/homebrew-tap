@@ -1,5 +1,5 @@
 cask "iqiyi" do
-  version "16.9.1"
+  version "17.3.0"
   sha256 :no_check
 
   url "https://static-d.iqiyi.com/ext/common/iQIYIMedia_271.dmg"
@@ -13,7 +13,7 @@ cask "iqiyi" do
     regex(/.*最新版本：([\d.]+)/i)
   end
 
-  depends_on macos: ">= :catalina"
+  depends_on macos: ">= :big_sur"
 
   app "爱奇艺.app"
 
