@@ -1,9 +1,9 @@
 class Codedb < Formula
   desc "Code intelligence server and MCP server"
   homepage "https://github.com/justrach/codedb"
-  url "https://github.com/justrach/codedb/releases/download/v0.2.57/codedb-darwin-arm64"
-  sha256 "69897f3340ccc0dad69328dc5f0ba15f8aea445064bc24fafed95049e3706205"
-  version "0.2.57"
+  url "https://github.com/justrach/codedb/releases/download/v0.2.572/codedb-darwin-arm64"
+  version "0.2.572"
+  sha256 "13dd0a6047efee1cecfa684690352b9c9b9a24a10f253f8e259bc6272b15c1c4"
   license "BSD-3-Clause"
 
   def install
