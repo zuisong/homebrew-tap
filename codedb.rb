@@ -6,6 +6,10 @@ class Codedb < Formula
   sha256 "13dd0a6047efee1cecfa684690352b9c9b9a24a10f253f8e259bc6272b15c1c4"
   license "BSD-3-Clause"
 
+  on_macos do
+    depends_on arch: :arm
+  end
+
   def install
     bin.install "codedb-darwin-arm64" => "codedb"
   end

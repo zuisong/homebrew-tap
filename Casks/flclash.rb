@@ -7,6 +7,8 @@ cask "flclash" do
   desc "Proxy client based on ClashMeta"
   homepage "https://github.com/chen08209/FlClash"
 
+  depends_on arch: :arm64
+
   app "flclash.app"
 
   zap trash: [

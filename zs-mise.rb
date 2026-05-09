@@ -8,6 +8,10 @@ class ZsMise < Formula
 
   depends_on "usage"
 
+  on_macos do
+    depends_on arch: :arm
+  end
+
   def install
     bin.install "bin/mise"
     generate_completions_from_executable(bin/"mise", "completions")
