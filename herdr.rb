@@ -1,10 +1,10 @@
 class Herdr < Formula
   desc "Agent multiplexer that lives in your terminal"
   homepage "https://herdr.dev"
-  url "https://github.com/ogulcancelik/herdr/releases/download/v0.5.5/herdr-macos-aarch64"
-  version "0.5.5"
-  sha256 "ec02eedb259324c5062243447e3892a5606410bdd01a89d9e6d13e1d0ec8ce9a"
-  license "AGPL-3.0"
+  url "https://github.com/ogulcancelik/herdr/releases/download/v0.5.7/herdr-macos-aarch64"
+  version "0.5.7"
+  sha256 "0c973f59168f64f67735871a84b42cda25c2bf33088b5b34bd14053475cf749f"
+  license "AGPL-3.0-or-later"
 
   on_macos do
     depends_on arch: :arm
