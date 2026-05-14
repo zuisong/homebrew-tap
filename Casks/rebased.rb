@@ -1,6 +1,6 @@
 cask "rebased" do
-  version "1.0.12"
-  sha256 "3ef9aace106128e78e94777c7fe64228cfa1df816e7cc15b8b1bc054b7df9e9c"
+  version "1.0.14"
+  sha256 "1a164f6c11c84f0794d74daba5dfcff8a875284a0d6e99d6147e247e85739ffa"
 
   url "https://github.com/DetachHead/rebased/releases/download/#{version}/rebased-aarch64.dmg"
   name "Rebased"
@@ -12,6 +12,7 @@ cask "rebased" do
   end
 
   depends_on arch: :arm64
+  depends_on :macos
 
   app "Rebased.app"
   shimscript = "#{staged_path}/rebased.wrapper.sh"
