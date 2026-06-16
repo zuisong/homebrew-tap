@@ -7,7 +7,7 @@ cask "quickrecorder" do
   desc "Lightweight and high-performance screen recorder"
   homepage "https://github.com/lihaoyun6/QuickRecorder"
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "QuickRecorder.app"
 
