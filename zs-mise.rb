@@ -1,9 +1,9 @@
 class ZsMise < Formula
   desc "Dev tools, env vars, task runner"
   homepage "https://mise.en.dev"
-  url "https://github.com/jdx/mise/releases/download/v2026.6.13/mise-v2026.6.13-macos-arm64.tar.xz"
-  version "2026.6.13"
-  sha256 "11a7869162c1c9f63cab8fc8cf06d26e3769d0a1f8fdebd10e6bc7ac2582e510"
+  url "https://github.com/jdx/mise/releases/download/v2026.6.14/mise-v2026.6.14-macos-arm64.tar.xz"
+  version "2026.6.14"
+  sha256 "e9eb38294564829518b83722c0a74a5fa74be78adc800beb6b04389b1218bfbd"
   license "MIT"
 
   depends_on "usage"
