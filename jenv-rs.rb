@@ -5,6 +5,13 @@ class JenvRs < Formula
   sha256 "7a6f6bc924d7ad807b3ef04b84a6a87a4ffbb3a8b6980e8cfd3e2cd85aaa2842"
   license "MIT"
 
+  # Both install a `jenv` executable and both own `$JENV_ROOT/versions` and
+  # `$JENV_ROOT/shims`. A shim written by one is a hard link to that build, so
+  # letting the two coexist on one PATH means `java` resolves through whichever
+  # `jenv` rehash happened to find first, and `jenv version` disagrees with the
+  # shims that are actually there. Homebrew refuses to hold both.
+  conflicts_with "jenv", because: "both install a `jenv` executable and both own $JENV_ROOT/shims"
+
   def install
     bin.install "jenv"
     # The shell is a positional argument, so no shell_parameter_format: this
@@ -14,12 +21,19 @@ class JenvRs < Formula
 
   def caveats
     <<~EOS
-      Add the shell setup to your profile, it is not written for you:
+      jenv-rs is a drop-in replacement for the original jenv, not a companion
+      to it. It installs its own `jenv` and does not support jenv's plugins.
+      Run `jenv skill` for the full operating reference.
+
+      Homebrew refuses to install this alongside homebrew-core's jenv. It
+      cannot see a jenv you installed some other way, so if one is already on
+      your PATH — a cargo install, or a copy in /usr/local/bin — remove it
+      first. Two jenvs on one PATH will disagree about $JENV_ROOT/shims, and
+      `java` will resolve through whichever one rehash found first.
+
+      The shell setup is not written for you:
 
         eval "$(jenv init -)"
-
-      jenv-rs is not the original jenv and does not support its plugins.
-      Run `jenv skill` for the full operating reference.
     EOS
   end
 
