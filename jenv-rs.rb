@@ -1,8 +1,8 @@
 class JenvRs < Formula
   desc "Drop-in jenv reimplementation in Rust, with native Windows support"
   homepage "https://github.com/zuisong/jenv-rs"
-  url "https://github.com/zuisong/jenv-rs/releases/download/v0.2.0/jenv-aarch64-apple-darwin.tar.gz"
-  sha256 "8aa363224c51349fd0834a69216fd56d788cffaebdc2d2cddffa941f186bbbbf"
+  url "https://github.com/zuisong/jenv-rs/releases/download/v0.2.1/jenv-aarch64-apple-darwin.tar.gz"
+  sha256 "7807229788f0fca81e87b467a4fca0e25dfa0d994c5b986aa61fcf20bb5fe802"
   license "MIT"
 
   # Both install a `jenv` executable and both own `$JENV_ROOT/versions` and
